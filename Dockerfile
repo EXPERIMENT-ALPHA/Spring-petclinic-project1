@@ -24,7 +24,7 @@ RUN echo export JAVA_HOME=/opt/java8 >> /etc/profile
 RUN echo export PATH=$PATH:/opt/java8/bin >> /etc/profile
 ENV JAVA_HOME "/opt/java8"
 ENV PATH "${JAVA_HOME}/bin:${PATH}"
-COPY /webapp/target/webapp.war /opt/tomcat/webapps
+COPY /target/petclinic.war /opt/tomcat/webapps
 
 EXPOSE 8080
 
