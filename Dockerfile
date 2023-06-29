@@ -1,4 +1,4 @@
-ROM centos
+FROM centos
 WORKDIR /opt
 
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
